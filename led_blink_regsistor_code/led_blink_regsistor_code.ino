@@ -6,8 +6,8 @@ void setup() {
 void loop() {
   PORTB |= (1 << PB5);  //PB5 = HIGH
   PORTB |= (1 << PB3);
-  delay(100);
+  _delay_ms(100);
   PORTB &= ~(1 << PB5);  //PB5 = LOW
   PORTB &= ~(1 << PB3);
-  delay(100);
+  _delay_ms(100);
 }
